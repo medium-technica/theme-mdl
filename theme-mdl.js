@@ -83,6 +83,8 @@ function loadFile(titleFile, index, event) {
  console.log(decodeURIComponent((window.location.href).replace(/%20/g, "_")));
  document.querySelector('meta[property="og:url"]').setAttribute("content", decodeURIComponent((window.location.href).replace(/%20/g, "_")));
  document.title = titleFile;
+ description = document.querySelector('meta[property="og:description"]').getAttribute("content");
+ console.log(description)
  if (index == 0) {
   $('.mdl-paging__prev').css("visibility", "hidden");
   document.querySelector('meta[property="og:description"]').setAttribute("content", "ആവർത്തനങ്ങളുടെ സ്മൃതികൾ");
