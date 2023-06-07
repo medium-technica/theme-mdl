@@ -90,7 +90,7 @@ function loadFile(titleFile, index, event) {
   $('.mdl-paging__prev').css("visibility", "hidden");
   document.querySelector('meta[property="og:description"]').setAttribute("content", Description);
  } else {
-  document.querySelector('meta[property="og:description"]').setAttribute("content", (Articles[titleFile]).substring(0, 100) + " ...");
+  document.querySelector('meta[property="og:description"]').setAttribute("content", (Articles[titleFile]).substring(0, 50) + " ...");
   $('.mdl-paging__prev').css("visibility", "visible");
  }
  if (index == ListFiles.length - 1) {
