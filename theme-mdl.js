@@ -3,6 +3,7 @@ $(fnInit())
 var ListFiles = [];
 var ListTitleFiles = [];
 var Articles;
+var Description;
 
 function fnInit() {
  console.log("init");
@@ -31,6 +32,7 @@ function fnLoadData() {
     return
    }
    loadFile(ListTitleFiles[0], 0);
+   Description = document.querySelector('meta[property="og:description"]').getAttribute("content");
   });
 }
 
@@ -83,13 +85,12 @@ function loadFile(titleFile, index, event) {
  console.log(decodeURIComponent((window.location.href).replace(/%20/g, "_")));
  document.querySelector('meta[property="og:url"]').setAttribute("content", decodeURIComponent((window.location.href).replace(/%20/g, "_")));
  document.title = titleFile;
- description = document.querySelector('meta[property="og:description"]').getAttribute("content");
  console.log(description)
  if (index == 0) {
   $('.mdl-paging__prev').css("visibility", "hidden");
-  document.querySelector('meta[property="og:description"]').setAttribute("content", description);
+  document.querySelector('meta[property="og:description"]').setAttribute("content", Description);
  } else {
-  document.querySelector('meta[property="og:description"]').setAttribute("content", (Articles[titleFile]).substring(0, 100) + "...");
+  document.querySelector('meta[property="og:description"]').setAttribute("content", (Articles[titleFile]).substring(0, 100) + " ...");
   $('.mdl-paging__prev').css("visibility", "visible");
  }
  if (index == ListFiles.length - 1) {
