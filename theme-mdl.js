@@ -87,7 +87,7 @@ function loadFile(titleFile, index, event) {
  console.log(description)
  if (index == 0) {
   $('.mdl-paging__prev').css("visibility", "hidden");
-  document.querySelector('meta[property="og:description"]').setAttribute("content", "ആവർത്തനങ്ങളുടെ സ്മൃതികൾ");
+  document.querySelector('meta[property="og:description"]').setAttribute("content", description);
  } else {
   document.querySelector('meta[property="og:description"]').setAttribute("content", (Articles[titleFile]).substring(0, 100) + "...");
   $('.mdl-paging__prev').css("visibility", "visible");
