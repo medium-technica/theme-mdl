@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* Rachana */
 
 @font-face {
@@ -35,7 +37,6 @@
 .page-title,
 .title-description {
  color: var(--text-color);
- font-family: Rachana;
  text-shadow: var(--text-shadow);
 }
 
