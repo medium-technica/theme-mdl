@@ -203,6 +203,9 @@ figcaption {
  .page-content {
   padding: 0 10rem 0 10rem;
  }
+}
+
+@media only screen and (max-width: 800px) {
  .two-cols figure {
   margin: 1rem;
   width: 80%;
