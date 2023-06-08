@@ -146,6 +146,11 @@ figcaption {
  font-style: italic;
 }
 
+.two-cols figcaption {
+ font-size: xx-small;
+ font-style: italic;
+}
+
 .mdl-paging {
  display: flex;
  justify-content: center;
