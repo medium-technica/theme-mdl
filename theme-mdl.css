@@ -109,6 +109,7 @@ body,
 .page-content td {
  border: 1px solid black;
  border-collapse: collapse;
+  padding: 7px 7px 0px 7px;
 }
 
 .page-body {
