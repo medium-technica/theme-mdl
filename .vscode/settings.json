@@ -1,5 +1,5 @@
 {
- "editor.fontFamily":"Monospace",
+ "editor.fontFamily": "Consolas, 'Courier New', monospace",
  "editor.tabSize": 1,
  "editor.fontSize": 12,
  "editor.wordWrap": "bounded"
